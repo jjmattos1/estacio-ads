@@ -1,0 +1,102 @@
+CMD ES - pratica 1 @ done
+
+pratica 2:
+
+#include <stdio.h>
+int main(){
+
+char escolha; 
+escolha = 'D';
+escolha = escolha - 2;
+
+printf("A variável escolha possui o valor: %c ", escolha);
+
+
+return 0;
+}
+
+#pratica 3:
+
+int a, b, c, d;
+a = 10;
+b = a + 1;
+c = b + 1;
+d = c + 1;
+a = b = c = d = 20; 
+
+
+printf("A variável c possui o valor: %d ", c);
+
+#pratica 4:
+
+char escolha;
+escolha = a;
+escolha = escolha + 1; 
+
+printf("A variável escolha possui o valor: %d ", escolha);
+
+return 0;
+
+# CMD ES Saida exemplos 1
+
+int a = 10;
+char ch = 'Z';
+printf("Atualmente, temos a = %d e ch = %c.\n", a, ch);
+return 0;
+
+# Saida exemplos 2
+
+int a, b, c;
+a = 10;
+b = a + 1;
+c = b + 2;
+
+# Saida exemplos 3
+
+char ch1, ch2, ch3;
+ch1 = 'H';
+ch2 = 'o';
+ch3 = 'W';
+printf("%cell%c %corld.\n", ch1, ch2, ch3);
+return 0;
+
+# Saida exemplos 4
+
+float a;
+a = 12.5;
+printf("a = %f\n", a);
+
+# Saida de dados Pratica 1
+
+int a, b, c;
+a = 1;
+b = a + 3;
+c = a;
+printf("b = %d e c = %d.\n", b, c);
+
+# Saida de dados Pratica 2
+
+printf("Valor total: %.1f\n", 9.1415169265);
+
+# Entrada de dados exemplo 1
+
+int numero;
+printf("Entre com um número inteiro:\n");
+scanf("%d", &numero);
+
+# Entrada de dados exemplo 2
+
+float dividendo, divisor;
+printf("Entre com dois numeros reais:\n");
+scanf("%f %f", &dividendo, &divisor);
+printf("A divisao de %.2f por %.2f vale %.2f", dividendo, divisor, dividendo/divisor);
+
+# Entrada de dados exemplo 3, fflush(stdin);
+
+char ch1, ch2;
+printf("Entre com duas letras:\n");
+scanf("%c", &ch1);
+scanf("%c", &ch2);
+printf("As letras inseridas foram %c e %c.\n", ch1, ch2);
+
+# Final Entrada e Saida, copiar 3 praticas finais aqui

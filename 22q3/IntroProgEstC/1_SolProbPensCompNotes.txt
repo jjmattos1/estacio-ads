@@ -1,1 +1,9 @@
-Notas aqui.
+Brackman (2017, quatro pilares:
+
+Decomposição - Dividir o problema inicial em partes menores.
+
+Reconhecimento de padrões - identificar repetições ou regras de concorrência, aumentando a chance de se conhecer alguma solução para problemas similares.
+
+Abstrações - a abstração consiste na filtragem e classificação dos dados, concentrando a atenção no que realmente é importante.
+
+Algoritmos - Os algoritmos são procedimentos para resolver um problema com as ações a serem executadas e a ordem em que elas devem acontecer.
