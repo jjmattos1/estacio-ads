@@ -74,7 +74,7 @@ b = a + 3;
 c = a;
 printf("b = %d e c = %d.\n", b, c);
 
-# Saida de dados Pratica 2
+# Saida de dados Pratica 2 @ done
 
 printf("Valor total: %.1f\n", 9.1415169265);
 
@@ -99,4 +99,29 @@ scanf("%c", &ch1);
 scanf("%c", &ch2);
 printf("As letras inseridas foram %c e %c.\n", ch1, ch2);
 
-# Final Entrada e Saida, copiar 3 praticas finais aqui
+# Final Entrada e Saida, copiar 3 praticas finais aqui.
+
+# CMD Entrada de dados - Pratica 1
+
+char inicial;
+int idade;
+printf("Entre com a sua idade e a sua inicial:\n");
+scanf("%d %c", &idade, &inicial);
+printf("Voce tem %d anos e seu nome comeca com %c\n",idade, inicial);
+
+# CMD Entrada de dados - Pratica 2
+
+char inicial;
+int idade;
+printf(“Entre com a sua idade e a sua inicial:\n”);
+scanf("%d %c", idade, inicial);
+printf("Voce tem %d anos e seu nome comeca com %c\n",idade, inicial);
+
+# CMD Entrada de dados - Pratica 3
+
+char inicial;
+int idade;
+printf("Entre com a sua idade e a sua inicial:\n");
+scanf("%d", &idade);
+scanf("%c", &inicial);
+printf("Voce tem %d anos e seu nome comeca com %c\n", idade, inicial);
