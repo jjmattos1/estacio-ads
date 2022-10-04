@@ -91,7 +91,7 @@ printf("Entre com dois numeros reais:\n");
 scanf("%f %f", &dividendo, &divisor);
 printf("A divisao de %.2f por %.2f vale %.2f", dividendo, divisor, dividendo/divisor);
 
-# Entrada de dados exemplo 3, fflush(stdin);
+# Entrada de dados exemplo 3, fflush(stdin); @ done
 
 char ch1, ch2;
 printf("Entre com duas letras:\n");
@@ -117,11 +117,5 @@ printf(“Entre com a sua idade e a sua inicial:\n”);
 scanf("%d %c", idade, inicial);
 printf("Voce tem %d anos e seu nome comeca com %c\n",idade, inicial);
 
-# CMD Entrada de dados - Pratica 3
+# pratica 3 e igual a pratica 2 acima
 
-char inicial;
-int idade;
-printf("Entre com a sua idade e a sua inicial:\n");
-scanf("%d", &idade);
-scanf("%c", &inicial);
-printf("Voce tem %d anos e seu nome comeca com %c\n", idade, inicial);
