@@ -119,3 +119,18 @@ printf("Voce tem %d anos e seu nome comeca com %c\n",idade, inicial);
 
 # pratica 3 e igual a pratica 2 acima
 
+# EstDec Exemplo 2
+
+	float nota;
+	printf ("Digite a nota: ");
+	scanf("%f", &nota);
+	printf("%f\n",nota);
+	if (nota >= 5)
+		printf("Parabéns você foi aprovado\n");
+	if (nota < 5)
+		printf("Não deu desta vez, mas não desista!");
+	
+
+
+
+
