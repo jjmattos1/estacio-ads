@@ -99,17 +99,7 @@ scanf("%c", &ch1);
 scanf("%c", &ch2);
 printf("As letras inseridas foram %c e %c.\n", ch1, ch2);
 
-# Final Entrada e Saida, copiar 3 praticas finais aqui.
-
-# CMD Entrada de dados - Pratica 1
-
-char inicial;
-int idade;
-printf("Entre com a sua idade e a sua inicial:\n");
-scanf("%d %c", &idade, &inicial);
-printf("Voce tem %d anos e seu nome comeca com %c\n",idade, inicial);
-
-# CMD Entrada de dados - Pratica 2
+# CMD Entrada de dados - Pratica 2 @ done
 
 char inicial;
 int idade;
@@ -119,7 +109,7 @@ printf("Voce tem %d anos e seu nome comeca com %c\n",idade, inicial);
 
 # pratica 3 e igual a pratica 2 acima
 
-# EstDec Exemplo 2
+# EstDec Exemplo 2 @ done
 
 	float nota;
 	printf ("Digite a nota: ");
@@ -130,6 +120,37 @@ printf("Voce tem %d anos e seu nome comeca com %c\n",idade, inicial);
 	if (nota < 5)
 		printf("Não deu desta vez, mas não desista!");
 	
+# EstDec ver videos vem qhe te explico modulo 1
+
+# EstDecAninh Exemplo 2 anterior serve para a explicacao
+
+# EstDecEncadEx @ done
+
+float nota;
+    printf ("Digite a nota: ");
+    scanf("%f", &nota);
+    printf("%f\n",nota);
+    if (nota < 0)
+        printf ("Erro: Média inválida!\n");
+    else if (nota > 10)
+        printf ("Erro: Média inválida!\n");
+    else if (nota >= 5)
+        printf ("Aluno aprovado!\n");
+    else
+        printf("Aluno reprovado!\n");
+
+# OperTernEx
+
+int a, b, c, d, e;
+
+a=1;
+b=2;
+c=3;
+d=4;
+
+e=(a>b)?c:d;
+
+
 
 
 
