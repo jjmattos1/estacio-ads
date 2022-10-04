@@ -139,7 +139,7 @@ float nota;
     else
         printf("Aluno reprovado!\n");
 
-# OperTernEx
+# OperTernEx @ done
 
 int a, b, c, d, e;
 
@@ -150,8 +150,5 @@ d=4;
 
 e=(a>b)?c:d;
 
-
-
-
-
+#
 

@@ -5,3 +5,4 @@ No C, o resultado da variável que receber a verificação booleana é tratada c
 No Java, o resultado da variável que receber a verificação booleana é tratada como constante booleana(true or false), so aceita um operador relacional.
 
 No Python, ele espera que o resultado "negado" seja ZERO ou None, e tudo o que for diferente disso é TRUE (ate medmo uma string aleatória). Uma atribuição if not no Python não e válido (porque ele e um valor que r None)!
+Nao se pode ter atribuição com o operador logico "not" no Python!

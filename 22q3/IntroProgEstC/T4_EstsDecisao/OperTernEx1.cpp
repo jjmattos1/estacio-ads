@@ -7,13 +7,21 @@ int main()
 	
 	int a, b, c, d, e;
 	
-	printf("Digite a variavel A: ");
-	scanf("%d\n", &a)
-	
-	printf("Digite a variavel B: ");
-	scanf("%d\n", &b)
+	printf("Digite a variavel A(press. enter): ");
+	scanf("%d", &a);
+	printf("\nDigite a variavel B: ");
+	scanf("%d", &b);
 	
 	//variavel C sera menor que a D. Criar algo com divisao e mult para essas variaveis.
+	
+	printf("\nCalculando variavel final 'e'...\n\n");
+	
+	c = (a * b) / a;
+	d = (a * b) + c;
+	e = (a > b) ? c : d;
+	
+	printf("Apos operacao ternaria, o valor de e fica: ");
+	printf("%d", e);
 	
 	printf(" \n");	
 	return 0;
