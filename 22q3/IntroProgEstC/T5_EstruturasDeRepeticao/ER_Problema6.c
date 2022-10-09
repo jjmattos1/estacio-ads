@@ -1,11 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int pairSum, oddSum, repCurrent, repSize, repStart = 0;
+
+int oddEven (repCurrent)
+{
+				if (repCurrent % 2 == 0)
+			{
+				pairSum += repCurrent;
+				// printf(sprintf(pairSum, "%d",42));
+			}
+				else
+				{
+				//oddSum = 0;
+				oddSum += repCurrent;
+				// printf(sprintf(oddSum, "%d",42));
+				}
+}
+
 int main ()
 {
 	printf("Estruturas de Repetição - Problema 6\n\n");
 	
-	int pairSum, oddSum, repCurrent, repSize, repStart = 0;
 		
 	printf("Digite a quantidade desejada números: ");
 	scanf("%d", &repSize);
@@ -16,23 +32,9 @@ int main ()
 	{
 		printf("\nDigite um número: ");
 		scanf("%d", &repCurrent);			
-	
-			if (repCurrent % 2 == 0)
-			{
-				pairSum += repCurrent;
-				printf(sprintf(pairSum,));
-			}
-				else
-				{
-				//oddSum = 0;
-				oddSum += repCurrent;
-				printf(sprintf(oddSum));
-				}
-			
-			
-	}
-			
-		
+		// aaaa	
+		oddEven(repCurrent)	;
+	}		
 		//printf(pairSum);
 		//printf("\n");
 	//printf(oddSum);
