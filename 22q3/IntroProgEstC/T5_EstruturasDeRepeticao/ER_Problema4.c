@@ -49,14 +49,4 @@ int main ()
 	
 	return 0;
 	
-}nt to float... testar no Windows a conversao float(variavel), variavel sendo int, pois no copilador CxxDroid nao funcionou!
-	
-	//avgCalc = repNum; //jeito que achei de usar o int como float!
-	//avg = salarySum / avgCalc;
-	//printf("\nA média salarial é de: R$ %f", avg);
-	
-	//printf("sqrt = %f", avgCalc);
-	
-	printf(" \n");	
-	return 0;
 }
