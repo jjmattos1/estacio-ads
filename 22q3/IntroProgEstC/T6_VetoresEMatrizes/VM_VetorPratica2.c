@@ -43,14 +43,19 @@ int main ()
 	
 	for ( repStart = 0 ; repStart <= vetSize ; repStart ++)
 		{
+			currentStud += repStart + 1;
+			
 			if ( (vetP2[repStart]) >= avg )
 			{
-				currentStud = repStart + 1;
-				printf("O %do aluno esta acima da media: ", currentStud);
+				printf("\nO %do aluno esta acima da media: ", currentStud);
 				printf(" ");
-				printf("(media do aluno %f)", (vetP2[repStart]));
+				printf("(media do aluno %f)\n.", (vetP2[repStart]));
 				//eof if
 			}
+				else
+				{
+					printf("\nO aluno %d esta abaixo da media %f da turma.\n", currentStud, avg);
+				}
 		}
 	
 	/*
@@ -63,4 +68,4 @@ int main ()
 	*/
 		
 	return 0;
-}}
+}
