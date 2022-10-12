@@ -22,7 +22,7 @@ int main ()
 	
 	printf("Vetor e Matrizes - Pratica 3\n\n");
 	
-	printf("Leia uma sequência de letras, terminada na letra (”z”), e mostre quantas vezes cada vogal (a, e, i, o, u) apareceu, no emulador a seguir.");
+	printf("Template: ç ~ ã.");
 	
 	
 	
