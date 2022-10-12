@@ -11,14 +11,14 @@
 int main ()
 {
 	// code init for international chars
-	// uncomment the /* below to run this source on Windows (int chars)
+	// uncomment the start-comment below to run this source on Windows (int chars)
 		/* 
 	setlocale(LC_ALL, ".UTF8");
 	SetConsoleCP(CP_UTF8); // Input codepage (affects cin, scanf, etc.)
     SetConsoleOutputCP(CP_UTF8); // Output codepage (affects cout, printf, etc.)
     // code end for international chars
     	*/
-     // uncomment the */ above to run this source on Windows (int chars)
+     // uncomment the end-comment above to run this source on Windows (int chars)
 	
 	printf("Vetor e Matrizes - Pratica 3\n\n");
 	
