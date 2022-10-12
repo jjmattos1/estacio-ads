@@ -11,11 +11,14 @@
 int main ()
 {
 	// code init for international chars
+	 /* uncomment the // on the beginning to run this source on Linux/Android
 	setlocale(LC_ALL, ".UTF8");
 	
 	SetConsoleCP(CP_UTF8); // Input codepage (affects cin, scanf, etc.)
     SetConsoleOutputCP(CP_UTF8); // Output codepage (affects cout, printf, etc.)
     // code end for international chars
+     */
+     // uncomment the // above to run this source on Linux/Android
 	
 	printf("Vetor e Matrizes - Pratica 3\n\n");
 	
