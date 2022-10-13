@@ -22,24 +22,23 @@ int main ()
     */
      // uncomment the end-comment above to run this source on Windows (int chars)
 	
-	int Acount, Ecount, Icount, Ocount, Ucount, repStart;
-	Acount = Ecount = Icount = Ocount = Ucount = repStart = 0;
-	int vetSize = 4; //int vetP3[vetSize];
-	char letras = 'a'; char vetP3[vetSize];
+	int vetSize = 5;
+	int vetP3[vetSize], repStart = 0;
+	char letras = 'a';
 	
 	for (repStart = 0 ; repStart <= vetSize ; repStart ++)
 		{
-			vetP3[repStart] = 'a';
+			vetP3[repStart] = 0;
 		}
 		
 	repStart = 0;
-		
+	/*	
 	for (repStart = 0 ; repStart <= vetSize ; repStart ++)
 		{
 			printf("%s ", vetP3);
 			//printf("%c ", (vetP3[repStart]));
 		}
-		
+	//	
 	printf("\n\n");
 	system("pause");
 	printf("\n");
@@ -55,49 +54,53 @@ int main ()
 	
 	while ( letras != 'z' )
 	{
-		// armazenar entrada numa variavel para so depois repassar o valor da mesma para o vetor.
-		// Senao o while ficara infinito!
-		
 		printf("\nDigite a letra desejada e pressione enter: ");
-		scanf("%s", vetP3);
-		//scanf("%s", (vetP3[letras]));
-		
-		
-	}
+		scanf(" %c", &letras);		
 	
-	for (repStart = 0 ; repStart <= vetSize ; repStart ++)
-	{
-		switch ((vetP3[repStart]))
+		switch ( letras )
 		{
 			case 'a':
-						Acount += 1;
-						//code
+						vetP3[0]++;
 						break;
 			case 'e':
-						Ecount += 1;
-						//code
+						vetP3[1]++;
 						break;
 			case 'i':
-						Icount += 1;
-						//code
+						vetP3[2]++;
 						break;
 			case 'o':
-						Ocount += 1;
-						//code
+						vetP3[3]++;
 						break;
 			case 'u':
-						Ucount += 1;
-						//code
+						vetP3[4]++;
 						break;
 		}
 	}
 	
 	printf("\n\n");
 	
-	printf("A QTD da vogal A inserida foi de: %d\n", Acount);
-	printf("A QTD da vogal E inserida foi de: %d\n", Ecount);
-	printf("A QTD da vogal I inserida foi de: %d\n", Icount);
-	printf("A QTD da vogal O inserida foi de: %d\n", Ocount);
+	printf("A QTD da vogal A inserida foi de: %d\n", vetP3[0]);
+	printf("A QTD da vogal E inserida foi de: %d\n", vetP3[1]);
+	printf("A QTD da vogal I inserida foi de: %d\n", vetP3[2]);
+	printf("A QTD da vogal O inserida foi de: %d\n", vetP3[3]);
+	printf("A QTD da vogal U inserida foi de: %d\n", vetP3[4]);
+	
+	printf("\nEntrega do resultado acima em formato FOR:\n");
+	
+	repStart = 0;
+	
+	printf("\n%d\n", repStart);
+	
+	for ( repStart = 0 ; repStart >= vetSize ; repStart ++ )
+	{
+		printf("\nA quantidade de cada vogal é, em ordem: %d\n", (vetP3[repStart]));
+	}
+	
+	// system("pause");
+	printf(" \n");	
+	return 0;
+}return 0;
+}vogal O inserida foi de: %d\n", Ocount);
 	printf("A QTD da vogal U inserida foi de: %d\n", Ucount);
 	
 	// system("pause");
