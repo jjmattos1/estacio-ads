@@ -1,8 +1,10 @@
 // needed libs for displaying international chars on Windows console
 // https://github.com/Embarcadero/Dev-Cpp/issues/103
+/*
 #define NOMINMAX // Define this before including windows.h
 #include <windows.h>
 #include <locale.h>
+*/
 // eofneeded
 
 #include <stdio.h>

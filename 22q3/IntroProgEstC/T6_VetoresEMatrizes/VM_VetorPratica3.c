@@ -87,16 +87,15 @@ int main ()
 	
 	printf("\nEntrega do resultado acima em formato FOR:\n");
 	
-	repStart = 0;
-	
-	printf("\n%d\n", repStart);
-	
-	for ( repStart = 0 ; repStart >= vetSize ; repStart ++ )
+	for ( repStart = 0 ; repStart < vetSize ; repStart ++ )
 	{
-		printf("\nA quantidade de cada vogal é, em ordem: %d\n", (vetP3[repStart]));
+		printf("\nA quantidade de cada vogal é, em ordem (AEIOU): %d \n", (vetP3[repStart]));
 	}
 	
 	// system("pause");
+	printf(" \n");	
+	return 0;
+}("pause");
 	printf(" \n");	
 	return 0;
 }return 0;
