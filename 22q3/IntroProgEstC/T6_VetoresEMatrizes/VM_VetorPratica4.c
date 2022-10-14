@@ -54,9 +54,11 @@ int main ()
 		 	mod1 += 1;
 		 	(vetP42[repStart1]) = mod1;
 		 }
-		 else
+		  else
 		 {
-		 	(vetP42[repStart1]) = (vetP41[repStart1-1]);
+		 	mod1 = (vetP41[repStart1]);
+		 	mod1 -= 1;
+		 	(vetP42[repStart1]) = mod1;
 		 }
 		 
 		 
