@@ -33,7 +33,7 @@ int main ()
 	"Conferir regras localizacao em questao na dada materia online.\n\n");
 	printf("Digite o tamanho do vetor desejado: ");
 	scanf("%d", &vetSize);
-	printf("\n\n");
+	printf("\n");
 	
 		// create vectors and init them	
 	int vetP41[vetSize], vetP42[vetSize];
@@ -65,7 +65,7 @@ int main ()
 	//eoformain	 
 	}
 	
-	printf("Segue abaixo o conteudo dos vetores 1 e 2.\n");
+	printf("\nSegue abaixo o conteudo dos vetores 1 e 2.\n\n");
 	printf("Vetor 1	|	Vetor 2\n\n");
 	
 	repStart1 = 0;
