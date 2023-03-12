@@ -41,9 +41,9 @@ int main ()
 	
 	printf(" \n");	
 	
-	printf("O somatrio dos números pares é: %d", pairSum);
+	printf("O somatório dos números pares é: %d", pairSum);
 	printf(" \n");
-	printf("O somatrio dos números Ímpares é: %d", oddSum);
+	printf("O somatório dos números ímpares é: %d", oddSum);
 	
 	return 0;
 }
