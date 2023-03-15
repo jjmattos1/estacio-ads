@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
 	<title>Index HTML - Tema 2</title>
 	<link rel="stylesheet" href="index.css">
 	<script src="index.js"></script>
 </head>
-
 <!--
 comentário
 
 <h1 style="color:blue;text-align:center;">H1</h1>
 -->
-
 <body>
+  <header>Page Header</header>
+  <nav>Nav Bar</nav>
+  <main>
   <h1>Header 1</h1>
   <p>Apache apontando para o androidHtdocs</p>
   
@@ -32,20 +31,20 @@ comentário
   <button onclick="this.innerHTML=Date()">Click me! (inline script)</button>
   <p id="showDS" onload="displayWSize()">todo load js displayWSize fn here</p>
   <br />
-  "ol+li" tag usage:
+  <p>"ol+li" tag usage:</p>
   <ol>
     <li>ol1 sub</li>
     <li>ol1 sub</li>
     <li>ol1 sub</li>
   </ol>
   <!--<br />-->
-  "ul+li" tag usage:
+  <p>"ul+li" tag usage:</p>
   <ul>
     <li>Non ordered list</li>
     <li>Non ordered list</li>
     <li>Non ordered list</li>
   </ul>
-  "dl dt dd" tags usage:
+  <p>"dl dt dd" tags usage:</p>
   <dl>
     <dt>pri text</dt>
       <dd>pri sub text</dd>
@@ -70,19 +69,94 @@ comentário
     <td>Roland Mendel</td><td>Austria</td></tr>
   </tbody>
   <tfoot>
-    <tr><td colspan="3"">Atendemos 24 horas</td></tr>
+    <tr><td colspan="3" id="bottom1">Atendemos 24 horas</td></tr>
   </tfoot>
 </table>
-<br />
-The Whistle of Death - Puss in the Boots 2
+<!-- Remember to research about how to manipulate this <td .. id="bottom1"> via css! -->
+<br /><br/>
+<p>The Whistle of Death - Puss in the Boots 2:</p>
 <br />
 <audio src="./whistledeath_puss.m4a" autoplay controls controlsList="nodownload" id="audio1"></audio>
-<br />
+<br /><br/>
+<p>Video test:</p><br/>
 <video src="./sample-5s.mp4" autoplay controls></video>
 
 <br /><br />
 test3
+<br /><br />
 
+<table>
+  <thead>
+    <tr><th colspan="2">Table head</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Line1 x col1</td><td>Line2 x col2</td></tr>
+    <tr><td colspan="2">Line3 + colspan2</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td colspan="2">Footer</td></tr>
+  </tfoot>
+ 
+</table>
+<br/>
+ <aside>Aside&nbsp;tag</aside>
+ <br />
+ <form action="./page-to-receive-form-data.php"  method="post">
+   Form1&nbsp;start
+   <br /><br />
+  <label for="placeholder1">Placeholder,&nbsp;required&nbsp;attribute:&nbsp;</label><input type="text" placeholder="Text&nbsp;here..." required="yes"> </input>
+     <br/><br/>
+     <label for="selection1">Selection1:&nbsp;</label><select id="selection1">
+       <option>1</option>
+       <option>2</option>
+       <option>3</option>
+     </select>
+     <br /><br/>
+     <p>Radio&nbsp;buttons&nbsp;1:</p>
+     <input type="radio" id="radio1" name="radio_1st">r1</input>
+     <input type="radio" id="radio2" name="radio_1st">r2</input>
+     <input type="radio" id="radio3" name="radio_1st">r3</input>
+     <br /><br />
+     <label for="password">Password: &nbsp;</label><input type="pwd"></input>
+     <!-- to do later:
+     input type range and number min max / number step and value attribs.
+     -->
+   <fieldset>
+     <legend>General&nbsp;information </legend>
+     <br/><label for="name">Name:&nbsp;</label><input type="text" id="name" minlenght="3" /><br/>
+     <label for="birthday">Birthday:&nbsp;</label><input type="date" id="birthday" /></br>
+     <label for="cpf">CPF:&nbsp;  </label><input type="text" minlenght="11" id="cpf" />
+     <label for="favcolor">Pick&nbsp;your&nbsp;favorite&nbsp;color:&nbsp;</label><input type="color" id="favcolor" /><br/><br/>
+    </fieldset><br/>
+    <fieldset>
+      <legend>Address</legend>
+      <br/>
+      <label for="addr_type"></label><select id="addr_type">
+        <option value="">Select</option>
+        <option value="">Street</option>
+        <option value="">Road</option>
+        <option value="">Avenue</option>
+        <option value="">Other</option>
+      </select><br/>
+      <label for="addr">Address:&nbsp;</label><input type="text" id="addr" /><br/>
+      <label for="addr_num">Number:&nbsp;</label><input type="text" id="addr_num" />
+      <label for="addr_comp">Additional&nbsp;information:</label><input type="text" id="addr_comp" /><br><br/>
+    </fieldset>
+    <br/>
+    <fieldset>
+      <legend>Talk&nbsp;to&nbsp;us</legend>
+      <label for="msg">Message:&nbsp;</label><br/><textarea type="text" id="msg"></textarea><br><br/>
+    </fieldset>
+    <fieldset>
+      <button type="submit">Send&nbsp;your&nbsp;message</button>
+      <button type="reset">Clean&nbsp;o&nbsp;fields</button>
+    </fieldset>
+     
+     <br />
+      <br /><br />Form1&nbsp;end
+  
+</form>
+</main>
 </body>
 
 </html>
