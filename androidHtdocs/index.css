@@ -1,6 +1,10 @@
 /*
 comentário
 
+Comment hotkey in VS Code:
+Windows = shift+alt+a
+Linux = Shift+ctrl+a
+
 */
 
 body  { background-color:lightblue; }
@@ -21,6 +25,23 @@ tr:nth-child(even) {
 
 bottom1 {
   text-align: center;
+}
+
+.negrito  { font-weight: bold;}
+.negrito::after {content: "[*]";}
+p::first-letter { font-size: 200%; color: #8a2be2; }
+
+div:hover { background-color: #000000; color: #8a2be2 ;}
+div { width: 100px; height: 100px; align-content: center;}
+#d1 { position: fixed; top: 25px; left: 25; background-color: yellow ;}
+#d2 { position: fixed; top: 75px; left: 75px; background-color: orange; }
+
+video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover; /* other option is "fill" */
+  /* position: sticky; */ /* test other positions later. The "absolute" didnt work good, because if it the video was over other elements on the page */
+  /* the static position ignores any other css configuration */
 }
 
 /* 
@@ -79,6 +100,14 @@ ttf') format('truetype'),
     url ('//siteondeafonteestadisponivel/fontes/awesome.eot') format('embedded-opentype');
   }
   
-  
+line
+
+Pseudoclasses
+  Example: div:hover{background-color:#000000;}
+  Definition: the line above render a specific color on a div tag when the mouse hoves over that div.
+
+Check other examples on "Linguagem de Marcação e Estilos - Css" PDF.
+
+
 
 */
