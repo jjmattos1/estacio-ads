@@ -117,6 +117,42 @@ Outra forma de instalação é por meio de ferramentas gerenciadoras de pacotes,
 
 Por último, é importante ter cuidado com as versões do framework em termos de compatibilidade, tanto em relação a bibliotecas de terceiros quanto em relação a funcionalidades em desuso/depreciadas.
 
+To load Bootstrap directly via html:
+  <link href="https://stackpath.bootstrapcdn.com/boostrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 
+Como utilizar o Foundation
+A forma de utilização do Foundation é semelhante à do Bootstrap: é preciso incluir um arquivo CSS e outro Javascript ou então utilizar um gerenciador de pacotes. Além disso, é recomendado também incluir a Biblioteca jQuery.
+
+A respeito da compatibilidade, aplica-se o que foi dito anteriormente: algumas funcionalidades são descontinuadas entre uma versão ou outra. Logo, é preciso tomar cuidado para que nada deixe de funcionar ao atualizar versões.
+
+To load Foundation and Semantic UI directly via html:
+  Foundation:
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+  <script src="https://cdnjs.cloudlfare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+  <! -- Example for Foundation below -->
+
+  Semantic UI:
+  <link rel="stylesheet" href="https://cdnjs.cloudlfare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="htps://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr 8BLUS jGIZsDYGmIJLvZb8=" crossorigin="anonymous"></script>
+
+  <! -- Example for Foundation below -->
+
+
+Comentário
+Em termos de recursos extras, destaca-se nesse framework a existência de recursos específicos para a criação de HTML responsivo para e-mail. Trata-se do Foundation for Emails.
+
+Como utilizar o Semantic UI
+A sua inclusão é semelhante à dos demais frameworks vistos anteriormente, ou seja, por meio de arquivos CSS e JS, além da Biblioteca jQuery, ou via gerenciadores de pacotes.
+
+Outros frameworks:
+
+Pure > Considerado o framework mais leve, foi desenvolvido pela Yahoo.
+Materialize CSS > Baseado no Material Design, ambos criados pelo Google e utilizados em seus produtos.
+Bulma > Framework baseado unicamente em CSS, não faz uso de Javascript.
+Skeleton > Framework minimalista. Possui apenas 400 linhas de código.
 
 */
