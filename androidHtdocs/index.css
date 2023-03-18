@@ -22,3 +22,63 @@ tr:nth-child(even) {
 bottom1 {
   text-align: center;
 }
+
+/* 
+CSS Selectors examples
+
+body       Specify a style for a specific tag.
+.xpto      Class xpto. You need to put the 'class=".xpto"' parameter in the tag, so it can use this style.
+#layer1    identificators. You'll have to use the 'id="idname"' parameter inside the tag, so this style will be applied to it.
+h1, h2     Multiple tags using the same style.
+a:hover   Pseudo element. In this example, when the mouse go over the <a> tag, it'll apply this current style.
+
+Background
+Estabiliza o fundo de elementos. Para tal há uma série de propriedades, além do atalho “Background”, como “background-color”, “background-image” etc.
+Border
+  Controla as bordas de um elemento, sendo possível definir suas cores, espessuras, entre outras propriedades.
+Top, Bottom, Righ e Left
+  Controlam o posicionamento, relativo ou absoluto, dos elementos em relação a outros elementos. Color Estila a cor do conteúdo textual de um elemento.
+Font-family, Font-size, Font-weight etc.
+  Série de propriedades usada para estilizar o conteúdo textual de um elemento no que diz respeito à fonte, como a família de fontes, seu tamanho, peso (mais clara ou mais escura - negrito) etc.
+Height
+  Define a altura de um elemento.
+List-style, List-styleimage etc.
+    Propriedades usadas para estilizar as listas HTML. Margin Controla a distância em função da margem de um elemento para outro. Padding Controla a distância entre as bordas e o conteúdo de um elemento. Position Define como um elemento deve ser posicionado na página. Text-...
+     Muitas propriedades controlam o comportamento do conteúdo textual de um elemento, como alinhamento (justificado, centralizado etc.), aparência (sublinhado etc.) etc.
+Width
+  Define a largura de um elemento. Z-index Define a profundidade de um elemento – usado, por exemplo, para sobreposição de elementos.
+Nesse caso, os estilos são declarados em um arquivo externo, com extensão “.css” e vinculados ao documento HTML por meio da tag < link > ou da diretiva @import dentro da tag < head >
+  Exemplos:
+    <link rel="stylesheet" type="text/css" href="url/stylesheet.css" />
+      * OU *
+      <style>@import ("url/stylesheet.css");</style>
+  Lembrando de que há essas maneiras de declarar/usar o CSS: inline (dentro da tag), interno (tudo declarado dentro do head sob a tag style), externo (link externk) e em escopo (dentro de uma tag principal, uma div por exemplo, se usa a tag style e faz toda declaração necessária dentro desta).
+  
+  Lembrar de que existe as regras de herança e precedência.
+
+Entretanto, a utilização do valor !important, que se enquadra no que chamados de css hack, na declaração mais generalizada, faz com que esse estilo se sobreponha ao específico. Logo, o código acima resulta na apresentação do texto dentro da tag < p > na cor azul.
+  Exemplo:
+  p {
+    color:blue!important;
+  }
+  div p {
+    color: red;
+  }
+  No exemplo acima, o trecho da tag p "color:blue!important;" será renderizado ao inves do trecho da tag p "color: red;".
+  Uso de Web Fonte (carregar fontes da internet no CSS), exemplo:
+  @font-face {
+    font-family: 'Awesome';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Awesome Font'),
+    url ('/assets/fonts/awesome
+woff2') format('woff2'),
+    url ('//siteondeafonteestadisponivel/fontes/awesome.woff') format('woff'),
+    url ('/assets/fonts/awesome
+ttf') format('truetype'),
+    url ('//siteondeafonteestadisponivel/fontes/awesome.eot') format('embedded-opentype');
+  }
+  
+  
+
+*/

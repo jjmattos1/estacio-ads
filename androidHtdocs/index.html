@@ -99,34 +99,44 @@ test3
  
 </table>
 <br/>
- <aside>Aside&nbsp;tag</aside>
+ <aside>Aside tag</aside>
  <br />
  <form action="./page-to-receive-form-data.php"  method="post">
-   Form1&nbsp;start
+   Form1 start
    <br /><br />
-  <label for="placeholder1">Placeholder,&nbsp;required&nbsp;attribute:&nbsp;</label><input type="text" placeholder="Text&nbsp;here..." required="yes"> </input>
+  <label for="placeholder1">Placeholder, required attribute:</label><input type="text" placeholder="Text here..." required></input>
      <br/><br/>
-     <label for="selection1">Selection1:&nbsp;</label><select id="selection1">
+     <label for="selection1">Selection1: </label><select id="selection1">
        <option>1</option>
        <option>2</option>
        <option>3</option>
      </select>
      <br /><br/>
-     <p>Radio&nbsp;buttons&nbsp;1:</p>
-     <input type="radio" id="radio1" name="radio_1st">r1</input>
-     <input type="radio" id="radio2" name="radio_1st">r2</input>
-     <input type="radio" id="radio3" name="radio_1st">r3</input>
+     <p>Radio buttons 1:</p>
+     <label for="radio1">R1</label><input type="radio" id="radio1" name="radio_1st" />
+     <label for="radio2">R2</label><input type="radio" id="radio2" name="radio_1st" />
+     <label for="radio3">R3</label><input type="radio" id="radio3" name="radio_1st" />
      <br /><br />
-     <label for="password">Password: &nbsp;</label><input type="pwd"></input>
+     <label for="pwd">Password:  </label><input type="password" id="pwd" />
      <!-- to do later:
-     input type range and number min max / number step and value attribs.
+     To test input types tel, datetime, number, email, int and etc!
+     
+     To use an input as a required one, you just have to add 'required'/'required=true' parameter into the input tag!
+     Also the attribute pattern="[rangeInit-End]{QTD}..."
+  "Você pode definir que ele contenha o DDD, com dois caracteres numéricos, seguido por dois conjuntos de números – um contendo 5 e outro contendo 3 ou 4 caracteres – o que geraria este código: pattern=“
+ [0-9]{5}-[0-9]{3,4}$”."
+ 
+  O comportamento padrão da HTML5 é validar os dados quando ocorre o envio do formulário. Entretanto, é possível desativar essa funcionalidade. Para isso, deve ser atribuído o atributo “novalidate” à tag <form>."
      -->
+     <label for="range1">Range: type input</label><input type="range" min="0" max="50" step="5" value="15" id="range1" /><br/>
+     <label for="number1">Number type input: </label><input type="number" min="0" max="15"><br/>
+     <br/><br/>
    <fieldset>
-     <legend>General&nbsp;information </legend>
-     <br/><label for="name">Name:&nbsp;</label><input type="text" id="name" minlenght="3" /><br/>
-     <label for="birthday">Birthday:&nbsp;</label><input type="date" id="birthday" /></br>
-     <label for="cpf">CPF:&nbsp;  </label><input type="text" minlenght="11" id="cpf" />
-     <label for="favcolor">Pick&nbsp;your&nbsp;favorite&nbsp;color:&nbsp;</label><input type="color" id="favcolor" /><br/><br/>
+     <legend>General information </legend>
+     <br/><label for="name">Name: </label><input type="text" id="name" minlenght="3" /><br/>
+     <label for="birthday">Birthday: </label><input type="date" id="birthday" /></br>
+     <label for="cpf">CPF:   </label><input type="text" minlenght="11" id="cpf" />
+     <label for="favcolor">Pick your favorite color: </label><input type="color" id="favcolor" /><br/><br/>
     </fieldset><br/>
     <fieldset>
       <legend>Address</legend>
@@ -138,23 +148,20 @@ test3
         <option value="">Avenue</option>
         <option value="">Other</option>
       </select><br/>
-      <label for="addr">Address:&nbsp;</label><input type="text" id="addr" /><br/>
-      <label for="addr_num">Number:&nbsp;</label><input type="text" id="addr_num" />
-      <label for="addr_comp">Additional&nbsp;information:</label><input type="text" id="addr_comp" /><br><br/>
+      <label for="addr">Address: </label><input type="text" id="addr" /><br/>
+      <label for="addr_num">Number: </label><input type="text" id="addr_num" />
+      <label for="addr_comp">Additional information:</label><input type="text" id="addr_comp" /><br><br/>
     </fieldset>
     <br/>
     <fieldset>
-      <legend>Talk&nbsp;to&nbsp;us</legend>
-      <label for="msg">Message:&nbsp;</label><br/><textarea type="text" id="msg"></textarea><br><br/>
+      <legend>Talk to us</legend>
+      <label for="msg">Message: </label><br/><textarea type="text" id="msg"></textarea><br><br/>
     </fieldset>
     <fieldset>
-      <button type="submit">Send&nbsp;your&nbsp;message</button>
-      <button type="reset">Clean&nbsp;o&nbsp;fields</button>
+      <button type="submit">Send your message</button>
+      <button type="reset">Clear fields</button>
     </fieldset>
-     
-     <br />
-      <br /><br />Form1&nbsp;end
-  
+      <br /><br />Form1 end
 </form>
 </main>
 </body>
