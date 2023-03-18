@@ -108,6 +108,15 @@ Pseudoclasses
 
 Check other examples on "Linguagem de Marcação e Estilos - Css" PDF.
 
+A seguir, três dos principais frameworks CSS existentes serão apresentados: Bootstrap, Foundation e Semantic UI.
+
+Como utilizar o Bootstrap
+Para utilizar o Bootstrap, é necessário incluir a sua biblioteca, composta por dois arquivos: um CSS e outro Javascript. Essa instalação é simples e pode ser feita pela inclusão dos respectivos arquivos diretamente na HTML.
+
+Outra forma de instalação é por meio de ferramentas gerenciadoras de pacotes, como npm ou gem. Em termos de dependência, para a utilização completa de todas as suas funcionalidades, é necessário ainda incluir outras bibliotecas Javascript, a Jquery e a Popper.
+
+Por último, é importante ter cuidado com as versões do framework em termos de compatibilidade, tanto em relação a bibliotecas de terceiros quanto em relação a funcionalidades em desuso/depreciadas.
+
 
 
 */
