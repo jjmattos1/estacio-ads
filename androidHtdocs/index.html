@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-	<title>Index HTML - Tema 2</title>
+	<title>Index HTML - Tema 4 @ JS</title>
 	<link rel="stylesheet" href="index.css">
 	<script src="index.js"></script>
   <!-- 
@@ -13,11 +13,6 @@
   Check on 'index.css' ways of loading Bootstrap, Foundation and Semantic UI directly on the html!
   
   -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudlfare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-<script src="htps://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr 8BLUS jGIZsDYGmIJLvZb8=" crossorigin="anonymous"></script>
-
 </head>
 
 <h1 style="color:blue;text-align:center;">H1</h1>
@@ -185,8 +180,21 @@ test3
 
 <div id="d1"></div>
 <div id="d2"></div>
+Div manipulation: <br/>
+X:<input type="text" id="x1"/><br/>
+Y:<input type="text" id="y1"/>
+
+<div id="c1">(100, 100)</div>
+
+<button onClick="changeDiv1_2()">Change position</button>
+
+
 
 </main>
 </body>
 
 </html>
+
+<!--
+É interessante notar que as duas produzem o mesmo efeito visual (que <b> e <i> respectivamente) em um texto, ou seja, marcá-lo como negrito e/ou itálico. Entretanto, há uma diferença importante entre elas, que vai além da visualização do texto no navegador pela maioria dos usuários. A função semântica de ambas é perceptível em dispositivos de leitura de tela, que transformam o texto em áudio, e normalmente são utilizados por pessoas com deficiência visual.
+-->

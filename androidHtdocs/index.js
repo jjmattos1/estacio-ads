@@ -19,7 +19,24 @@ function setAudioInitVol() {
   audio.volume = 0.2;
 }
 
+function changeDiv1_2() {
+  let d1 document.getElementById("d1");
+  let d2 document.getElementById("d2");
+  let x1 document.getElementById("x1");
+  let y1 document.getElementById("y1");
+  
+  let objc1 = document.getElementById("c1");
+  objc1.style.left = '${x1.value}px';
+  objc1.style.top = '${y1.value}';
+  objc1.innerHTML = '(${x1.value},${y1.value})';
+  
+  
+  d1.style.left = '${x1.value}px';
+  d1.style.top = '${y1.value}px';
+  d1.innerHTML = '(${x1.value},${y1.value})';
+  d2.style.left = '${x1.value}';
+  d2.style.top = '${y1.value}';
+  d2.innerHTML = '(${x1.value},${y1.value})';
+}
 
-/*
-É interessante notar que as duas produzem o mesmo efeito visual (que <b> e <i> respectivamente) em um texto, ou seja, marcá-lo como negrito e/ou itálico. Entretanto, há uma diferença importante entre elas, que vai além da visualização do texto no navegador pela maioria dos usuários. A função semântica de ambas é perceptível em dispositivos de leitura de tela, que transformam o texto em áudio, e normalmente são utilizados por pessoas com deficiência visual.
-*/
+

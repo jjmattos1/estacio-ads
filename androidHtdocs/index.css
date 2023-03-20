@@ -35,6 +35,7 @@ div:hover { background-color: #000000; color: #8a2be2 ;}
 div { width: 100px; height: 100px; align-content: center;}
 #d1 { position: fixed; top: 25px; left: 25; background-color: yellow ;}
 #d2 { position: fixed; top: 75px; left: 75px; background-color: orange; }
+#c1 { position: absolute; top: 100px; left: 100px; width: 100px; height: 100px; background-color: blue; }
 
 video {
   height: 100vh;
@@ -139,8 +140,6 @@ To load Foundation and Semantic UI directly via html:
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   <script src="htps://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr 8BLUS jGIZsDYGmIJLvZb8=" crossorigin="anonymous"></script>
 
-  <! -- Example for Foundation below -->
-
 
 Comentário
 Em termos de recursos extras, destaca-se nesse framework a existência de recursos específicos para a criação de HTML responsivo para e-mail. Trata-se do Foundation for Emails.
@@ -155,4 +154,9 @@ Materialize CSS > Baseado no Material Design, ambos criados pelo Google e utiliz
 Bulma > Framework baseado unicamente em CSS, não faz uso de Javascript.
 Skeleton > Framework minimalista. Possui apenas 400 linhas de código.
 
+Search about usint flexbox css position, prof. Cople said that it works better on mobile devices because it's responsive.
+
+Angular is a construction framework for the frontend. With it, you can use more that one framework (like Bootstrap and Foundation for example), and the Angular framework will be responsible about making the way/routes to use these other frameworks together.
+
+material.io = design patterns
 */
