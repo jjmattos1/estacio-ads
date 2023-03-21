@@ -20,23 +20,23 @@ function setAudioInitVol() {
 }
 
 function changeDiv1_2() {
-  let d1 document.getElementById("d1");
-  let d2 document.getElementById("d2");
-  let x1 document.getElementById("x1");
-  let y1 document.getElementById("y1");
-  
+  let d1 = document.getElementById("d1");
+  let d2 = document.getElementById("d2");
   let objc1 = document.getElementById("c1");
-  objc1.style.left = '${x1.value}px';
-  objc1.style.top = '${y1.value}';
-  objc1.innerHTML = '(${x1.value},${y1.value})';
+  let objx1 = document.getElementById("x1");
+  let objy1 = document.getElementById("y1");
   
+  objc1.style.left = `${x1.value}px`;
+  objc1.style.top = `${y1.value}px`;
+  objc1.innerHTML = `(${x1.value},${y1.value})`;
   
-  d1.style.left = '${x1.value}px';
-  d1.style.top = '${y1.value}px';
-  d1.innerHTML = '(${x1.value},${y1.value})';
-  d2.style.left = '${x1.value}';
-  d2.style.top = '${y1.value}';
-  d2.innerHTML = '(${x1.value},${y1.value})';
+  let ad1 = d1.style.left;
+  d1.style.left = ad1+`${x1.value}px`;
+  d1.style.top = `${y1.value}px`;
+  d1.innerHTML = `(${x1.value},${y1.value})`;
+  d2.style.left = `${x1.value}px`;
+  d2.style.top = `${y1.value}px`;
+  d2.innerHTML = `(${x1.value},${y1.value})`;
 }
 
 
