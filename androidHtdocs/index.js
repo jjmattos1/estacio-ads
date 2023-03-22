@@ -38,5 +38,27 @@ function changeDiv1_2() {
   d2.style.top = `${y1.value}px`;
   d2.innerHTML = `(${x1.value},${y1.value})`;
 }
+/* Does not works as on 22/03/23 @ Android with Acode app
+class resultsContainer {
+  static mult1Result = 0;
+}
+*/
+function multiply(num1,num2) {
+  //var mult1Result = 0;
+  let multResult = num1*num2;
+  return multResult;
+}
 
+function updateDiv2() {
+  let localDiv = document.getElementById("multResultDiv2");
+  let value1 = document.getElementById("mValue1");
+  let value2 = document.getElementById("mValue2");
+  localDiv.innerHTML += multiply(mValue1,mValue2);
+}
 
+/*
+var localDiv = document.getElementById("multResultDiv");
+localDiv.innerHTML += mult1Result;
+
+question: does js has a static or global variable? that works outside of a function?
+*/

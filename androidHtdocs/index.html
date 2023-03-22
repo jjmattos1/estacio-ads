@@ -14,7 +14,21 @@
   
   -->
 </head>
-
+<!--
+<div id="multResultDiv1">Resultado do alerta aqui.</div>
+<script>
+  var mult1Result = 15+25;
+  alert("Resultado: "+mult1Result);
+  var divMultResult1 = document.getElementById("multResultDiv1");
+  divMultResult1.innerHTML += mult1Result;
+</script>
+-->
+<br/>
+<input type="text" id="mValue1"/>
+<input type="text" id="mValue2"/>
+<button onClick="updateDiv2()">Update Div below</button><br/>
+<div id="multResultDiv2">Multiply function result here!</div>
+<br/><br/><br/>
 <h1 style="color:blue;text-align:center;">H1</h1>
 
 <body>
@@ -22,9 +36,10 @@
   <nav>Nav Bar</nav>
   <main>
   <h1>Header 1</h1><br/><br/>
-
+  <!--
   <div id="d1">(25,25)</div>
   <div id="d2">(75,75)</div>
+  -->
   Div manipulation: <br/>
   X:<input type="text" id="x1"/><br/>
   Y:<input type="text" id="y1"/>
@@ -33,15 +48,16 @@
   
   <button onClick="changeDiv1_2()">Change position</button>
 
-  <p>Apache apontando para o androidHtdocs</p>
+  <p>Apache@Android apontando para o androidHtdocs</p>
   
   Bodytext
   
   </br></br>
+  <!--
   <script>
     document.write(5+6);
   </script>
-  
+  -->
   </br></br>
   <button onClick="displayDate()">What time it is? Click me!</button>
   <p id="demo"></p>
@@ -182,11 +198,11 @@ test3
 </form>
 
 <p>Apenas um teste de
-  <span class="negrito">pseudo-elemento</span>.
-  O restante do texto não é alterado.
+  <span class="negrito">pseudo-elemento</span>
+  O restante do texto não é alterado
 </p>
 
-<div>Div hover Test!</div>
+<div id="divHover">Div hover Test!</div>
 <br/><br/>
 
 </main>
