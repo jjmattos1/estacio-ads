@@ -35,7 +35,7 @@ div:hover { background-color: #000000; color: #8a2be2 ;}
 div { width: 100px; height: 100px; align-content: center; border: 3px outset white;}
 #d1 { position: fixed; top: 425px; left: 425; background-color: yellow ;}
 #d2 { position: fixed; top: 475px; left: 475px; background-color: orange; }
-#c1 { position: absolute; top: 600px; left: 200px; background-color: blue; }
+#c1 { position: absolute; top: 450px; left: 200px; background-color: blue; }
 
 
 video {

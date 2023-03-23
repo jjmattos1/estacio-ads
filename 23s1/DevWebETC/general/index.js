@@ -47,13 +47,26 @@ function multiply(num1,num2) {
   //var mult1Result = 0;
   let multResult = num1*num2;
   return multResult;
+  /*
+  ref:
+  objc1.style.top = `${y1.value}px`;
+  objc1.innerHTML = `(${x1.value},${y1.value})`;
+  */
 }
 
 function updateDiv2() {
   let localDiv = document.getElementById("multResultDiv2");
   let value1 = document.getElementById("mValue1");
   let value2 = document.getElementById("mValue2");
-  localDiv.innerHTML += multiply(mValue1,mValue2);
+  //let result = [0,1,2];
+  //result.pop(multiply(`${value1.value}`,`${value2.value}`));
+  let result = multiply(`${value1.value}`,`${value2.value}`);
+  localDiv.innerHTML += result;
+  localDiv.innerHTML += " - ";
+  //document.getElementById("multResultDiv2").innerHTML += result.join(" - ");
+  //.join(" - ");
+  //localDiv.innerHTML += `${value1.value}`;
+  //localDiv.innerHTML += result.join(" - ");
 }
 
 /*
