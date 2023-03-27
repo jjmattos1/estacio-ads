@@ -69,3 +69,9 @@ for (const x of letters) {
     txtOf += ` ${x}`;
     console.log(`For Of teste: ${txtOf}`)
 }
+console.log('\n');
+let n = 1
+do {
+  n += 1;
+} while (n < 10);
+console.log(` ${n}`);
