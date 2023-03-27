@@ -38,7 +38,7 @@ function changeDiv1_2() {
   d2.style.top = `${y1.value}px`;
   d2.innerHTML = `(${x1.value},${y1.value})`;
 }
-/* Does not works as on 22/03/23 @ Android with Acode app
+/* Does not work as on 22/03/23 @ Android with Acode app
 class resultsContainer {
   static mult1Result = 0;
 }

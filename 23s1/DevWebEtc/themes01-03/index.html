@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+	<title>Index HTML - Tema 4 @ JS</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="index.js"></script>
+  <!-- 
+  research about this:
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content=""width=device-width, initial-scale=1.0">
+
+  Check on 'index.css' ways of loading Bootstrap, Foundation and Semantic UI directly on the html!
+  
+  -->
+</head>
+
+<div id="multResultDiv1">Resultado do alerta aqui: </div>
+<script>
+  var mult1Result = 15+25;
+  alert("Resultado: "+mult1Result);
+  var divMultResult1 = document.getElementById("multResultDiv1");
+  divMultResult1.innerHTML += mult1Result;
+</script>
+
+<br/>
+<input type="text" id="mValue1"/>
+<input type="text" id="mValue2"/>
+<button onClick="updateDiv2()">Update Div below</button><br/>
+<div id="multResultDiv2">Multiply function result here: </div>
+<br/><br/><br/>
+<h1 style="color:blue;text-align:center;">H1</h1>
+
+<body>
+  <header>Page Header</header>
+  <nav>Nav Bar</nav>
+  <main>
+  <h1>Header 1</h1><br/><br/>
+  <!--
+  <div id="d1">(25,25)</div>
+  <div id="d2">(75,75)</div>
+  -->
+  Div manipulation: <br/>
+  X:<input type="text" id="x1"/><br/>
+  Y:<input type="text" id="y1"/>
+  
+  <div id="c1">(450, 200)</div>
+  
+  <button onClick="changeDiv1_2()">Change position</button>
+
+  <p>Apache@Android apontando para o androidHtdocs</p>
+  
+  Bodytext
+  
+  </br></br>
+  
+  <script>
+    document.write(5+6);
+  </script>
+  
+  </br></br>
+  <button onClick="displayDate()">What time it is? Click me!</button>
+  <p id="demo"></p>
+  <button onclick="this.innerHTML=Date()">Click me! (inline script)</button>
+  <p id="showDS" onload="displayWSize()">todo load js displayWSize fn here</p>
+  <br />
+  <p>"ol+li" tag usage:</p>
+  <ol>
+    <li>ol1 sub</li>
+    <li>ol1 sub</li>
+    <li>ol1 sub</li>
+  </ol>
+  <!--<br />-->
+  <p>"ul+li" tag usage:</p>
+  <ul>
+    <li>Non ordered list</li>
+    <li>Non ordered list</li>
+    <li>Non ordered list</li>
+  </ul>
+  <p>"dl dt dd" tags usage:</p>
+  <dl>
+    <dt>pri text</dt>
+      <dd>pri sub text</dd>
+    <dt>sec text</dt>
+      <dd>sec sub text</dd>
+    <dt>thi text</dt>
+      <dd>thi sub text</dd>
+  </dl>
+<br />
+<table>
+  <thead>
+    <tr>
+      <th>Empresa</th><th>Contato</th><th>País</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td><td>Germany</td></tr>
+    <tr><td>Centro Comercial Moctezuma</td>
+    <td>Francisco Chang</td><td>Mexico</td></tr>
+    <tr><td>Ernst Handel</td>
+    <td>Roland Mendel</td><td>Austria</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td colspan="3" id="bottom1">Atendemos 24 horas</td></tr>
+  </tfoot>
+</table>
+<!-- Remember to research about how to manipulate this <td .. id="bottom1"> via css! -->
+<br /><br/>
+<p>The Whistle of Death - Puss in the Boots 2:</p>
+<br />
+<audio src="./whistledeath_puss.m4a" autoplay controls controlsList="nodownload" id="audio1"></audio>
+<br /><br/>
+<p>Video test:</p><br/>
+<video src="./sample-5s.mp4" autoplay controls></video><br/>
+
+<br /><br />
+test3
+<br /><br />
+
+<table>
+  <thead>
+    <tr><th colspan="2">Table head</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Line1 x col1</td><td>Line2 x col2</td></tr>
+    <tr><td colspan="2">Line3 + colspan2</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td colspan="2">Footer</td></tr>
+  </tfoot>
+ 
+</table>
+<br/>
+ <aside>Aside tag</aside>
+ <br />
+ <form action="./page-to-receive-form-data.php"  method="post">
+   Form1 start
+   <br /><br />
+  <label for="placeholder1">Placeholder, required attribute:</label><input type="text" placeholder="Text here..." required></input>
+     <br/><br/>
+     <label for="selection1">Selection1: </label><select id="selection1">
+       <option>1</option>
+       <option>2</option>
+       <option>3</option>
+     </select>
+     <br /><br/>
+     <p>Radio buttons 1:</p>
+     <label for="radio1">R1</label><input type="radio" id="radio1" name="radio_1st" />
+     <label for="radio2">R2</label><input type="radio" id="radio2" name="radio_1st" />
+     <label for="radio3">R3</label><input type="radio" id="radio3" name="radio_1st" />
+     <br /><br />
+     <label for="pwd">Password:  </label><input type="password" id="pwd" />
+     <!-- to do later:
+     To test input types tel, datetime, number, email, int and etc!
+     
+     To use an input as a required one, you just have to add 'required'/'required=true' parameter into the input tag!
+     Also the attribute pattern="[rangeInit-End]{QTD}..."
+  "Você pode definir que ele contenha o DDD, com dois caracteres numéricos, seguido por dois conjuntos de números – um contendo 5 e outro contendo 3 ou 4 caracteres – o que geraria este código: pattern=“
+ [0-9]{5}-[0-9]{3,4}$”."
+ 
+  O comportamento padrão da HTML5 é validar os dados quando ocorre o envio do formulário. Entretanto, é possível desativar essa funcionalidade. Para isso, deve ser atribuído o atributo “novalidate” à tag <form>."
+     -->
+     <label for="range1">Range: type input</label><input type="range" min="0" max="50" step="5" value="15" id="range1" /><br/>
+     <label for="number1">Number type input: </label><input type="number" min="0" max="15"><br/>
+     <br/><br/>
+   <fieldset>
+     <legend>General information </legend>
+     <br/><label for="name">Name: </label><input type="text" id="name" minlenght="3" /><br/>
+     <label for="birthday">Birthday: </label><input type="date" id="birthday" /></br>
+     <label for="cpf">CPF:   </label><input type="text" minlenght="11" id="cpf" />
+     <label for="favcolor">Pick your favorite color: </label><input type="color" id="favcolor" /><br/><br/>
+    </fieldset><br/>
+    <fieldset>
+      <legend>Address</legend>
+      <br/>
+      <label for="addr_type"></label><select id="addr_type">
+        <option value="">Select</option>
+        <option value="">Street</option>
+        <option value="">Road</option>
+        <option value="">Avenue</option>
+        <option value="">Other</option>
+      </select><br/>
+      <label for="addr">Address: </label><input type="text" id="addr" /><br/>
+      <label for="addr_num">Number: </label><input type="text" id="addr_num" />
+      <label for="addr_comp">Additional information:</label><input type="text" id="addr_comp" /><br><br/>
+    </fieldset>
+    <br/>
+    <fieldset>
+      <legend>Talk to us</legend>
+      <label for="msg">Message: </label><br/><textarea type="text" id="msg"></textarea><br><br/>
+    </fieldset>
+    <fieldset>
+      <button type="submit">Send your message</button>
+      <button type="reset">Clear fields</button>
+    </fieldset>
+      <br /><br />Form1 end
+</form>
+
+<p>Apenas um teste de
+  <span class="negrito">pseudo-elemento</span>
+  O restante do texto não é alterado
+</p>
+
+<div id="divHover">Div hover Test!</div>
+<br/><br/>
+
+</main>
+</body>
+
+</html>
+
+<!--
+É interessante notar que as duas produzem o mesmo efeito visual (que <b> e <i> respectivamente) em um texto, ou seja, marcá-lo como negrito e/ou itálico. Entretanto, há uma diferença importante entre elas, que vai além da visualização do texto no navegador pela maioria dos usuários. A função semântica de ambas é perceptível em dispositivos de leitura de tela, que transformam o texto em áudio, e normalmente são utilizados por pessoas com deficiência visual.
+-->

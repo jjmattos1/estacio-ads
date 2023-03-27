@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Tema 4 @ JS - Módulo 1</title>
+    </head>
+
+    <body>
+        <script>
+            let sum3 = (a,b) => a + b;
+
+            const numbers = [45,4,9,16,25];
+            let txt = "";
+            for (let x in numbers) {
+                txt += numbers[x];
+            }
+            const letters = ["a","b","c"];
+            for (const x of letters) {
+                txt += x;
+            }
+            
+            function updateDemo() {
+                const a = [12,54,23];
+                const b = [99,30,45];
+                let c = a.concat(b);
+                c.sort();
+                c.reverse();
+                c = c.filter((x) => (x>20 && x<90));
+                document.getElementById("demo").innerHTML = c.join(" :: ");
+            }
+
+            let pessoas = [ { idade: 25, nome: "Ana" },
+            { idade:43, nome: "Carlos"}
+            ];
+            // creating classes in js. You can also use the "class" method.
+            function Pessoa(nome,idade) {
+                this.nome = nome; this.idade = idade;
+            }
+            let pessoasx = [ new Pessoa("Ana",25),
+                            new Pessoa("Carlos",43)
+            ];
+            // async http request Ajax test, still needs to complete the url
+            function ajaxTest() {
+                const request = new XMLHttpRequest();
+                request.open('GET','url');
+                request.onload = () => {
+                    console.log(request.responseText);
+                }
+                request.send()
+            }
+            // creating arrays
+            let v1 = new Array (15,21,32);
+            let v2 = [13,26,37];
+            
+        </script>
+        <button onclick="sum3(3,5)">Somar arrow function</button> Resultado via Console
+        <br/><br/>
+        a<br/><br/>
+        <div id="demo">Demo vetor</div>
+        <button onclick="updateDemo()">Update demo</button><br/><br/>
+        b<br/><br/>
+    </body>
+</html>
+<!-- 
+    https://dog.ceo/
+-->
