@@ -60,3 +60,25 @@ for (xStudents of students) {
   xTest += ` ${xStudents}`;
 }
 console.log(xTest);
+console.log('Printing only the array by its name: ')
+console.log(students);
+console.log('Replace Anna via splice(pos1,1, Whitney): ');
+students.splice(1,1,'Whitney');
+console.log(students);
+console.log('students Array size  now:');
+console.log(Object.keys(students).length);
+console.log('delete method usage, delete students[0]');
+delete students[0];
+console.log(students);
+console.log(
+Object.keys(students).length);
+/*
+primos.splice(2,2);
+
+console.log(primos); //imprimirá 2,3,11,13,17’
+
+Nesse método, para fins de remoção, o primeiro parâmetro indica o índice e o segundo, a quantidade de elementos a serem excluídos.
+*/
+//alert(students.length);
+console.log('students array lenght: ');
+console.log(students.length);
