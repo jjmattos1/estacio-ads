@@ -34,6 +34,29 @@ console.log('"students" array mod with Splice method:'+xTxtSplice);
 console.log('\nFrutas array lenght via "Object.keys(students) lenght" syntax: '+ Object.keys(students).length)
 // pop method
 let studentsPop = students.pop();
-console.log('\n"pop" method, removes only the final element of the array: '+studentsPop);
+console.log('\n"pop" method, removes only the final element of the array: '+studentsPop+' removed');
+// shift method
 let studentsShift = students.shift();
-console.log('\n"shift" method, removes the first element of the array and then reindexes it: '+studentsShift);
+console.log('\n"shift" method, removes the first element of the array and then reindexes it: '+studentsShift+' removed');
+//
+console.log('Students array till now:');
+let xTest = "";
+for (xStudents of students) {
+  xTest += ` ${xStudents}`;
+}
+console.log(xTest);
+console.log('Students lenght test/add, adding Maria:');
+console.log(students[students.length] = 'Maria');
+xTest = "";
+console.log('Students array after Maria added via lenght test: ');
+for (xStudents of students) {
+  xTest += ` ${xStudents}`;
+}
+console.log(xTest);
+console.log('Helena added via spice method (3,0,Helena): ')
+students.splice(3,0,'Helena');
+xTest = "";
+for (xStudents of students) {
+  xTest += ` ${xStudents}`;
+}
+console.log(xTest);
