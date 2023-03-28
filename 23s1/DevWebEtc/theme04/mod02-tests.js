@@ -53,21 +53,35 @@ for (var i = 0; i < frutas.length; i++) {
 }
 console.log('\n');
 for (let fruta in frutas) {
-    console.log('Nome da fruta contida no Array via in: '+ frutas[fruta]);
+    console.log('Nome da fruta contida no Array via For In [fruta]: '+ frutas[fruta]);
 }
 console.log('\n');
+// For In previous output
+/*
 const numbers = [45, 4, 9, 16, 25];
 let txtIn = "";
 for (let x in numbers) {
     txtIn += ` ${numbers[x]}`;
     console.log(`For In teste: ${txtIn}`);
 }
+*/
+// For In correct example
+for (let fruta in frutas) {
+    console.log('Nome da fruta contida no Array via For In normal: '+ fruta);
+}
 console.log('\n');
+// For Of wrong example
+/*
 let txtOf = "";
 const letters = ["a","b","c"];
 for (const x of letters) {
     txtOf += ` ${x}`;
     console.log(`For Of teste: ${txtOf}`)
+}
+*/
+// For Of correct example
+for (let fruta of frutas) {
+    console.log('Nome da fruta contida no Array via For Of normal: '+ fruta);
 }
 console.log('\n');
 let n = 1
