@@ -30,7 +30,10 @@ let xTxtSplice = "";
 for (xStudents of students) {
   xTxtSplice += ` ${xStudents}`;
 }
-console.log(xTxtSplice);
-console.log('Frutas array lenght via "Object.keys(students) lenght" syntax:\n')
-console.log(Object.keys(students).length);
-console.log('\n');
+console.log('"students" array mod with Splice method:'+xTxtSplice);
+console.log('\nFrutas array lenght via "Object.keys(students) lenght" syntax: '+ Object.keys(students).length)
+// pop method
+let studentsPop = students.pop();
+console.log('\n"pop" method, removes only the final element of the array: '+studentsPop);
+let studentsShift = students.shift();
+console.log('\n"shift" method, removes the first element of the array and then reindexes it: '+studentsShift);
