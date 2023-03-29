@@ -7,16 +7,17 @@ console.log('\n');
 let frutas = ['Laranja','Uva','Limão'];
 for (x of frutas)
   console.log(' '+x);
-  let fLenght = frutas.lenght;
+  let fLenght = frutas.length;
   console.log(fLenght);
 console.log('\n');
 delete frutas[0];
-console.log('\n');
+console.log('\nJump line 14');
+console.log('frutas array after "delete frutas[0];":');
 for (x of frutas)
-  console.log(' '+x);
-console.log('\n');
-console.log('Frutas array lenght via .lenght propertie:\n')
-console.log(frutas.lenght);
+  console.log(x);
+console.log('\nJump line 17');
+console.log('Frutas array length via .lenght propertie:\n')
+console.log(frutas.length);
 console.log('\n');
 students.push('Helena','Maria');
 let xTxt = "";
@@ -31,7 +32,7 @@ for (xStudents of students) {
   xTxtSplice += ` ${xStudents}`;
 }
 console.log('"students" array mod with Splice method:'+xTxtSplice);
-console.log('\nFrutas array lenght via "Object.keys(students) lenght" syntax: '+ Object.keys(students).length)
+console.log('\nFrutas array elements amount via "Object.keys(students) lenght" syntax: '+ Object.keys(students).length)
 // pop method
 let studentsPop = students.pop();
 console.log('\n"pop" method, removes only the final element of the array: '+studentsPop+' removed');
@@ -53,7 +54,7 @@ for (xStudents of students) {
   xTest += ` ${xStudents}`;
 }
 console.log(xTest);
-console.log('Helena added via spice method (3,0,Helena): ')
+console.log('Helena added via splice method (3,0,Helena): ')
 students.splice(3,0,'Helena');
 xTest = "";
 for (xStudents of students) {
@@ -81,7 +82,21 @@ Nesse método, para fins de remoção, o primeiro parâmetro indica o índice e 
 //alert(students.length);
 console.log('students array lenght: '+students.length);
 console.log('\n');
-console.log('test');
-
+console.log('Using push & unshift methods to include Joel and Sara @ students:');
+students.push('Joel');
+students.unshift('Sara');
+console.log(students);
 // se for alterar o comprimento do array, exemplo array.lenght = 4, e anteriormente ele era de 7 posições, ele de fato ficará com 4 posições e os dados a partir da 4a posição serão perdidos. 
+// research about the filter method on arrays. It also removes elementsof an array, to a new one, but its syntax is more complex.
+// remember that you always can use the Console directly to test the coding logic (Acode Console, VS Code Node Console).
+// template line below to copy as needed
+// console.log('');
+// slice method
+console.log('students array after "students.slice(3
+2,4)":');
+const studentsSlice = students.slice(2,4);
+console.log(students);
+
+// console.log('');
+// console.log('');
 
