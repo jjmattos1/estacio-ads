@@ -67,11 +67,10 @@ students.splice(1,1,'Whitney');
 console.log(students);
 console.log('students Array size  now:');
 console.log(Object.keys(students).length);
-console.log('delete method usage, delete students[0]');
+console.log('delete method usage, delete students[0]: ');
 delete students[0];
 console.log(students);
-console.log(
-Object.keys(students).length);
+console.log('students array elements amount via "Object.keys(student).lenght" command: '+Object.keys(students).length);
 /*
 primos.splice(2,2);
 
@@ -80,5 +79,9 @@ console.log(primos); //imprimirá 2,3,11,13,17’
 Nesse método, para fins de remoção, o primeiro parâmetro indica o índice e o segundo, a quantidade de elementos a serem excluídos.
 */
 //alert(students.length);
-console.log('students array lenght: ');
-console.log(students.length);
+console.log('students array lenght: '+students.length);
+console.log('\n');
+console.log('test');
+
+// se for alterar o comprimento do array, exemplo array.lenght = 4, e anteriormente ele era de 7 posições, ele de fato ficará com 4 posições e os dados a partir da 4a posição serão perdidos. 
+
