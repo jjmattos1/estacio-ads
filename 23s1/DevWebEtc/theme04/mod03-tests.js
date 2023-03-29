@@ -92,11 +92,9 @@ console.log(students);
 // template line below to copy as needed
 // console.log('');
 // slice method
-console.log('students array after "students.slice(3
-2,4)":');
+console.log('students array after "students.slice(2,4)":');
 const studentsSlice = students.slice(2,4);
 console.log(students);
-
 // console.log('');
 // console.log('');
 
