@@ -1,0 +1,87 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Módulo 04 - Testes</title>
+    <script type="text/javascript">
+        function loadImgAJAX() {
+
+            const xmlHttpRequest = new XMLHttpRequest();
+            const url = "https://dog.ceo/api/breeds/image/random"
+
+            xmlHttpRequest.open("GET", url, true);
+
+            xmlHttpRequest.onreadystatechange = function () {
+                // you can also monitor the status property instead of the readyState one to do the same thing as below
+                // transform this and Fetch API functions to arrow function type, eg:
+                /* let somar2 = (a,b) => {
+                    return a+b;
+                }
+                let somar3 = (a,b) => a + b; */
+
+                if  (xmlHttpRequest.readyState == 3) {
+                    console.log('Loading content...');
+                }
+                if (xmlHttpRequest.readyState == 4) {
+
+                    let jsonResponse = JSON.parse(xmlHttpRequest.responseText);
+
+                    console.log('Request finished!');
+                    console.log('Request result: ' + jsonResponse);
+                    console.log('Request result: ' + jsonResponse.message);
+
+                    const imgDog = document.getElementById("img_dog");
+                    imgDog.src = jsonResponse.message;
+                }
+                
+            };
+
+            xmlHttpRequest.send(null);
+
+        }
+
+        function loadImgFetchAPI() {
+            const url = "https://dog.ceo/api/breeds/image/random"
+            fetch(url, {
+                method: 'get'
+            })
+            .then(function(response) {
+                response.json().then(function(data) {
+                    console.log('Request result: ' + data.message);
+
+                    const imgDog = document.getElementById("img_dog");
+                    imgDog.src = data.message;
+                });
+            })
+            .catch(function(err) {
+                console.error('The following error happened during the request: ' + err);
+            });
+        }
+
+        // another example code for Fetch API...
+        function alterar() {
+            getText (
+                'http://localhost:4200/assets/teste.txt');
+        }
+        async function getText(endereco) {
+            let x = await fetch(endereco);
+            let y = await x.text();
+            console.log(y);
+        }
+        //... till here
+
+        //jQuery AJAX example
+        // import jQuery js here and 
+
+    </script>
+</head>
+<body>
+    <div id="hello1">Hello World!</div>
+    <h1>Imagens aleatórias de cachorros</h1>
+    <p>Ao clicar no botão a seguir uma nova imagem será carregada graças a requisições assíncronas com o método xmlHttpRequest!</p>
+    <img src="" alt="Aguardando a imagem ser carregada" id="img_dog" /><br/><br/>
+    <button onclick="loadImgAJAX()">Carregar Imagens via AJAX</button> OU <button onclick="loadImgFetchAPI()">Carregar imagem via Fetch API</button><br/><br/>
+    <p>Lembrar de verificar código exemplo extra neste html (script) Fetch API e jQuery AJAX!</p>
+</body>
+</html>
