@@ -1,0 +1,62 @@
+Variável $_Request
+
+É considerada "curinga", uma vez que exerce múltiplos papéis. Com ela, é possível receber tanto variáveis provenientes de métodos GET quanto POST – e também do método cookies ($_COOKIE).
+
+Sua utilização é semelhante ao que foi visto em $_GET e $_POST.
+
+$var2 = "Programação";
+$var2 .= " com PHP"; //com a utilização da combinação de operadores a variável $var2 passou a ter o conteúdo "Programação com PHP"
+
+$var3 = ($var4 = "Copie esses códigos") . " e pratique seus conhecimentos!" ;
+
+Usar o "." é uma forma de você concatenar os valores.
+
+No exemplo acima o conteúdo da variável $var3 é igual a "Copie esses códigos e pratique seus conhecimentos!"
+Já a variável $var4 possui o conteúdo "Copie esses códigos".
+
+A partir da versão 7 do PHP, um novo operador foi incluído, o “spaceship”, cuja forma de utilização é “$var1<=> $var2”. Ele retorna -1, 0 ou 1 quando $var1 for, respectivamente, menor, igual ou maior que $var2.
+
+xor
+$var1 xor $var2
+Retorna true se $var1 OU $var2 forem verdadeiras, mas não ambas
+
+!
+!$var1
+Retorna true se $var1 não for verdadeira
+
+PHP permite que sejam utilizadas formas alternativas das instruções vistas. Em linhas gerais, troca-se a chave de abertura por dois pontos e a de fechamento pela palavra reservada “end” seguida do nome da instrução. Veja o exemplo:
+
+<?php
+ $var1 = 10;
+ $var2 = 10;
+
+ if($var1 > $var2):
+	echo "$var1 é maior que $var2";
+ elseif($var1 < $var2):
+	echo "$var1 é menor que $var2";
+ else:
+	echo "$var1 e $var2 são iguais";
+ endif;
+ ?>
+
+ Outra sintaxe alternativa interessante presente no PHP é o operador ternário. Por meio dele é possível avaliar uma condição e atribuir um valor de acordo com a validação. Veja o exemplo para ficar mais claro:
+<?php
+$var1 = 10;
+ $var2 = ($var1 >= 10) ? 11 : 9;
+ echo $var2; //imprimirá 11
+?>
+
+A última estrutura de repetição que veremos em PHP é a foreach. Esse laço é parecido com o for, possuindo uma sintaxe mais simples e sendo muito propício para realizar interações em arrays. Veja o exemplo:
+<?php
+ $carros = Array("Fusca", "Monza", "Passat");
+
+ foreach($carros as $carro){
+	echo $carro;
+	echo "\n";
+ }
+
+ for ($i = 0; $i < count($carros); $i++) {
+	echo $carros[$i];
+	echo "\n";
+ }
+ ?>
