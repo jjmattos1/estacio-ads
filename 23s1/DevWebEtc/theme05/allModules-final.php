@@ -12,7 +12,7 @@
   <hr/>
   <?php
     session_start();
-    if(isset($_SESSION["usuario"])) {
+    if(isset($_SESSION["user"])) {
   ?>
   <a href="logout.php">Logout</a>
   <?php

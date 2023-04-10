@@ -12,8 +12,8 @@
       echo("<hr/><h2>".$_GET["erro"]."</h2><hr/>");
   ?>
   <form action="login.php" method="post">
-    <p>Login: <input type="text" name="login" /></p>
-    <p>Password: <input type="text" name="pw" /></p>
+    <p><label for="login">Login: </label><input type="text" name="login" placeholder="Campo login/usuário" /></p>
+    <p><label for="pw">Password: </label><input type="password" name="pw" placeholder="Senha do login/usuário" /></p>
     <input type="submit" value="Enviar"/>
   </form>
 </body>

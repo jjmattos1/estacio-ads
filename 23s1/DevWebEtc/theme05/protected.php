@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if (!isset($_SESSION["usuario"]))
+  if (!isset($_SESSION["user"]))
     header("Location: form_login.php",true,301);
   // starts rendering the protected page content.
   else {
@@ -14,7 +14,7 @@
   <title>Página Protegida</title>
 </head>
 <body>
-  <h1>Ola <?php echo ($_SESSION["usuario"]) ?></h1>
+  <h1>Ola <?php echo ($_SESSION["user"]) ?></h1>
   <h2><a href="allModules-final.php"i>Retornar a página allModules-Final</a></h2>
 </body>
 </html>
