@@ -12,9 +12,9 @@
       echo("<hr/><h2>".$_GET["erro"]."</h2><hr/>");
   ?>
   <form action="login.php" method="post">
-    <p>Login: <input type="text" name="login"/></p>
-    <p>Senha: <input type="text" name="senha"/></p>
-    <input type="submit" value="enviar"/>
+    <p>Login: <input type="text" name="login" /></p>
+    <p>Password: <input type="text" name="pw" /></p>
+    <input type="submit" value="Enviar"/>
   </form>
 </body>
 </html>
