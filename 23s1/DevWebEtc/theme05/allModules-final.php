@@ -18,7 +18,7 @@
   <?php
       }
   ?>
-  <p>Teste parágrafo</p>
+  <p>Falta criar exemplos dos laços de repetição. Por hora ignorei pois é repetição, a não ser pelo foreach que é sensacional o uso dele em arrays.</p>
 </body>
 </html>
 
